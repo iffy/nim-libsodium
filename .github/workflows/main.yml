@@ -12,7 +12,7 @@ jobs:
         nimversion: [stable, devel]
     steps:
     - uses: actions/checkout@v1
-    - uses: iffy/install-nim@v4.1.1
+    - uses: iffy/install-nim@v5
       with:
         version: ${{ matrix.nimversion }}  
     - name: Install Linux deps
