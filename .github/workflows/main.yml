@@ -9,7 +9,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macOS-latest, windows-latest]
-        nimversion: [stable, devel]
+        nimversion: [stable]
     steps:
     - uses: actions/checkout@v1
     - uses: iffy/install-nim@v5
