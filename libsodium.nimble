@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.7.1"
+version       = "0.1.0"
 author        = "Federico Ceratto"
 description   = "libsodium wrapper"
 license       = "MPL-2.0"
