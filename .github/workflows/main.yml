@@ -31,7 +31,7 @@ jobs:
       run: |
         brew update
         brew install libsodium
+        printf "DYLD_LIBRARY_PATH=/opt/homebrew/lib:$DYLD_LIBRARY_PATH" >> $GITHUB_ENV
     - name: Test
       run: |
-        export DYLD_LIBRARY_PATH=/opt/homebrew/lib:$DYLD_LIBRARY_PATH
         nim c -d:nimDebugDlOpen -r test_sodium.nim
