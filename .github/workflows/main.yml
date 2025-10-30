@@ -32,4 +32,5 @@ jobs:
         brew update
         brew install libsodium
     - name: Test
-      run: nim c -r test_sodium.nim
+      run: |
+        nim c -d:nimDebugDlOpen -r test_sodium.nim
